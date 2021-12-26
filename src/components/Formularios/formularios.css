@@ -1,0 +1,209 @@
+.backg{
+    width: 100vw;
+    height: 100vh;
+    margin: auto;
+    display: flex;
+    align-items: center;
+}
+.userfoot{
+    margin-top: 10px;
+}
+.userfoot a{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 650;
+    color: gray;
+} 
+      .userfoot a:hover{
+          color: #45BB3A;}
+          
+          /* LOGIN */
+
+.form-container{ /* bloque formulario completo */
+    margin: auto;
+    width: 70vw;
+    text-align: center;
+    padding: 20px;
+    max-width: 470px;
+    background-color: rgba(34, 34, 34, 0.877);
+    border: 1px solid;
+    border-radius: 12px;
+}
+
+.logouser{ /* texto Completa tus datos */
+    width: 100%;
+    color: beige;
+    font-weight: 800;
+    text-shadow: -1px 1px 2px black; 
+}
+
+.froglog{ /* margen inferior de img logo */
+    margin-bottom: 5px;
+    margin-top: 10px;
+}
+
+@media screen and (max-width:400px){
+    .froglog{
+        width: 75%;
+    }
+    .logo p {font-size: 15px};
+};
+.user, .pass{ /* separacion entre email/cedula y contrase;a */
+    margin-bottom: 8px;
+}
+label{ /* estilo labels verdes */
+    color: #45BB3A;
+    font-weight: 800;
+    font-size: 17px;
+    padding: 3px;
+    text-shadow: -1px 1px 1px black;
+}
+input[type=email],[type=password],[type=text]{ /* estilos imputs redondeados */
+    border: 1px solid #45BB3A;
+    border-radius: 8px;
+}
+.check{
+    float: left;
+    margin-left: -25px;
+    margin-bottom: 5px
+}          
+.checkmark{
+    font-size: 13px;
+    font-weight: bolder;
+    margin-left: 5px;
+}
+.reglog{ /* margen sup link registrate y boton */
+    margin-top: 15px;
+}
+.login{ /* estilo boton iniciar sesion */
+    background-color: #45BB3A;
+    border: none;
+    color: white;
+    padding: 12px 20px;
+    font-size: 15px;
+    border-radius: 7px;
+    font-weight: 700;
+}
+.login a{
+    text-decoration: none;
+    color: white;
+}
+.login:hover{ /* hover boton */
+    box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 2px black;
+}
+.regis{ /* letra registrate */
+    font-size: 13px;
+    font-weight: bolder;
+    color: #45BB3A;
+    text-shadow: -1px 1px 2px black;
+}
+.regis p {
+    margin-bottom: 0.5rem;
+}
+.regis a{ /* color de link registrate */
+    text-decoration: underline;
+    color: beige;
+}
+.regis a:hover{ /* hover link registro */
+    color:#45BB3A;
+    font-weight: bolder;
+  }
+
+  @media screen and (max-width: 300px){
+      .regis p {
+          display: none;
+      }
+      .sesion {
+          display: none;
+      }
+      .regis a {
+          display: flex;
+          justify-content: center;
+          margin-top: 19px;
+      }
+
+  }
+
+  /* PAGINA REGISTRO */
+
+  .form-regis{
+    max-width: 470px;
+    text-align: center;
+    padding: 15px;
+    background-color: rgba(34, 34, 34, 0.877);
+    border: 1px solid #45BB3A;
+    border-radius: 10px;
+    color: beige;
+    margin-top: 2vh;
+    margin-bottom: 2vh;
+    font-weight: 700;
+}
+
+.completa{
+    text-shadow: -1px 1px 2px black;
+}
+
+.datos{
+      box-sizing: border-box;
+    }
+
+.REG {
+        display: inline-block;
+        border: 1px solid #45BB3A;
+        border-radius: 8px;
+        margin-bottom: 5px;
+        }
+
+.localidad{
+            display: flex;
+            justify-content: space-between;
+            margin-top: 10px;
+          }
+
+.barrios{
+    border: 1px solid #45BB3A;
+    border-radius: 8px;
+    padding: 5px;
+    width: 50%;
+}
+
+.terminos{
+    font-size: 13px;
+    margin-top: 5px;
+    margin-bottom: 10px;
+  }
+
+  .terminos a{
+      color:white
+  }
+ 
+  .terminos a:hover{
+    color: #45BB3A;
+  }
+
+.registerbtn{
+    background-color: #45BB3A;
+    border: none;
+    color: white;
+    padding: 10px 20px;
+    text-align: center;    
+    font-size: 18px;
+    font-weight: 700;
+    margin-top: 10px;
+    border-radius: 8px;
+  }
+  .registerbtn:hover{
+      box-shadow: 2px 2px 2px black;
+    text-shadow: 1px 1px 2px black;
+    }
+    /* temporal */
+    .linkhome{
+        text-decoration: none;
+        color: white;
+    }
+    .linkhome:hover {
+        color: white;
+        text-shadow: 1px 1px 2px black;
+
+    }

@@ -4,7 +4,10 @@
 /node_modules
 /.pnp
 .pnp.js
-
+/otros.txt
+public/JSON/fakeAPI.json
+src/components/Trabajo
+src/components/Formularios/Contacto.jsx
 # testing
 /coverage
 

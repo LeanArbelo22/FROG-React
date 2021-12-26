@@ -1,0 +1,97 @@
+[
+    {
+        "id": 1,
+        "name": "Aceite",
+        "price": 110,
+        "img": "./img/productos/aceite.jpg",
+        "category": "Almacen"
+    },
+    
+    {
+        "id": 2,
+        "name": "Arroz",
+        "price": 52,
+        "img": "./img/productos/arroz.jpg",
+        "category": "Almacen" 
+    },
+
+    {
+        "id": 3,
+        "name": "Arvejas",
+        "price": 35,
+        "img": "./img/productos/arvejas.jpg",
+        "category": "Almacen"
+    },
+
+    {
+        "id": 4,
+        "name": "Azucar",
+        "price": 48,
+        "img": "./img/productos/azucar.jpg",
+        "category": "Desayuno"
+    },
+
+    {
+        "id": 5,
+        "name": "Cafe",
+        "price": 245,
+        "img": "./img/productos/cafe.jpg",
+        "category": "Desayuno"
+    },
+
+    {
+        "id": 6,
+        "name": "Caldo",
+        "price": 63,
+        "img": "./img/productos/caldo.jpg",
+        "category": "Almacen"
+    },
+
+    {
+        "id": 7,
+        "name": "Fideos",
+        "price": 59,
+        "img": "./img/productos/fideos.jpg",
+        "category": "Almacen"
+    },
+
+    {
+        "id": 8,
+        "name": "Harina",
+        "price": 49,
+        "img": "./img/productos/harina.jpg",
+        "category": "Almacen"
+    },
+
+    {
+        "id": 9,
+        "name": "Maizena",
+        "price": 75,
+        "img": "./img/productos/maizena.jpg",
+        "category": "Almacen"
+    },
+
+    {
+        "id": 10,
+        "name": "Pure",
+        "price": 40,
+        "img": "./img/productos/pure.jpg",
+        "category": "Almacen"
+    },
+
+    {
+        "id": 11,
+        "name": "Ramen",
+        "price": 23,
+        "img": "./img/productos/ramen.jpg",
+        "category": "Almacen"
+    },
+
+    {
+        "id": 12,
+        "name": "Sopa",
+        "price": 89,
+        "img": "./img/productos/sopa.jpg",
+        "category": "Almacen"
+    }
+]

@@ -1,0 +1,49 @@
+[
+    {
+        "id": 1,
+        "name": "Frog 1",
+        "address": "Av. Brasil 2968",
+        "schedule": "08:00 - 23:00",
+        "img": "./img/locales/F1.jpg"
+    },
+
+    {
+        "id": 2,
+        "name": "Frog 8",
+        "address": "Perez Castellano 1478",
+        "schedule": "07:00 - 23:00",
+        "img": "./img/locales/F8.png"
+    },
+
+    {
+        "id": 3,
+        "name": "Frog 9",
+        "address": "Av. Gonzalo Ramírez 1345",
+        "schedule": "07:30 - 23:00",
+        "img": "./img/locales/F9.jpg"
+    }, 
+
+    {
+        "id": 4,
+        "name": "Frog 13",
+        "address": "Carlos Quijano 1309",
+        "schedule": "08:00 - 23:00",
+        "img": "./img/locales/F13.JPG"
+    },
+
+    {
+        "id": 5,
+        "name": "Frog 15",
+        "address": "Constituyente 1788",
+        "schedule": "07:30 - 23:00",
+        "img": "./img/locales/F15.jpg"
+    },
+
+    {
+        "id": 6,
+        "name": "Frog 23",
+        "address": "Av. Brasil 2365",
+        "schedule": "07:30 - 23:00",
+        "img": "./img/locales/F23.jpg"
+    }
+]

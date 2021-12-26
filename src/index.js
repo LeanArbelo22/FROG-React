@@ -1,17 +1,28 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import { render } from 'react-dom';
+import { BrowserRouter, Routes, Route } from "react-router-dom";
 import './index.css';
-import App from './App';
-import reportWebVitals from './reportWebVitals';
+import AppFrog from './AppFrog'; // si no lo confunde con .json
+import Login from './components/Formularios/Login';
+import Registro from './components/Formularios/Registro';
+import FrogCard from './components/Formularios/FrogCard';
+import ShoppingCart from './components/Shop/ShoppingCart';
+//import Contacto from './components/Formularios/Contacto';
+//import Trabajo from './components/Trabajo/Trabajo';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
+
+const rootElement = document.getElementById("root");
+render(
+  <BrowserRouter>
+    <Routes>
+      <Route exact path="/" element={<AppFrog />} />
+      <Route exact path="/login" element={<Login />} />
+      <Route exact path="/registro" element={<Registro />} />
+      <Route exact path="/frogcard" element={<FrogCard />} />
+      <Route exact path="/envios" element={<ShoppingCart />} />
+      {/* <Route exact path="/contacto" element={<Contacto />} /> */}
+      {/* <Route exact path="/trabajo" element={<Trabajo />} /> */}
+    </Routes>
+  </BrowserRouter>,
+  rootElement
 );
-
-// If you want to start measuring performance in your app, pass a function
-// to log results (for example: reportWebVitals(console.log))
-// or send to an analytics endpoint. Learn more: https://bit.ly/CRA-vitals
-reportWebVitals();
