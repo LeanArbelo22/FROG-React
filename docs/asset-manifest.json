@@ -1,16 +1,16 @@
 {
   "files": {
-    "main.css": "/static/css/main.a797afa1.chunk.css",
-    "main.js": "/static/js/main.77ee1949.chunk.js",
-    "main.js.map": "/static/js/main.77ee1949.chunk.js.map",
-    "runtime-main.js": "/static/js/runtime-main.e863bf03.js",
-    "runtime-main.js.map": "/static/js/runtime-main.e863bf03.js.map",
-    "static/js/2.ee413e72.chunk.js": "/static/js/2.ee413e72.chunk.js",
-    "static/js/2.ee413e72.chunk.js.map": "/static/js/2.ee413e72.chunk.js.map",
-    "index.html": "/index.html",
-    "static/css/main.a797afa1.chunk.css.map": "/static/css/main.a797afa1.chunk.css.map",
-    "static/js/2.ee413e72.chunk.js.LICENSE.txt": "/static/js/2.ee413e72.chunk.js.LICENSE.txt",
-    "static/media/tarjetaPuntos.b2a266e2.jpg": "/static/media/tarjetaPuntos.b2a266e2.jpg"
+    "main.css": "./static/css/main.a797afa1.chunk.css",
+    "main.js": "./static/js/main.77ee1949.chunk.js",
+    "main.js.map": "./static/js/main.77ee1949.chunk.js.map",
+    "runtime-main.js": "./static/js/runtime-main.e863bf03.js",
+    "runtime-main.js.map": "./static/js/runtime-main.e863bf03.js.map",
+    "static/js/2.ee413e72.chunk.js": "./static/js/2.ee413e72.chunk.js",
+    "static/js/2.ee413e72.chunk.js.map": "./static/js/2.ee413e72.chunk.js.map",
+    "index.html": "./index.html",
+    "static/css/main.a797afa1.chunk.css.map": "./static/css/main.a797afa1.chunk.css.map",
+    "static/js/2.ee413e72.chunk.js.LICENSE.txt": "./static/js/2.ee413e72.chunk.js.LICENSE.txt",
+    "static/media/tarjetaPuntos.b2a266e2.jpg": "./static/media/tarjetaPuntos.b2a266e2.jpg"
   },
   "entrypoints": [
     "static/js/runtime-main.e863bf03.js",
