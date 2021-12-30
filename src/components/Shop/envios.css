@@ -21,21 +21,38 @@
     margin-top: 15px;
 }
 
-@media screen and (max-width: 415px) {
+@media screen and (max-width: 375px) {
     .contenedor{
-        width: 100vw;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 33%);
         grid-template-rows: repeat(4, 25%);
         border-radius: 0;
     }
 }
-
-@media screen and (min-width: 415px) and (max-width: 700px) {
+@media screen and (min-width: 375px) and (max-width: 425px) {
     .contenedor{
-        width: 90%;
+        width: 100%;
         display: grid;
         grid-template-columns: repeat(4, 25%);
+        grid-template-rows: repeat(3, 1fr);
+        border-radius: 0;
+    }
+}
+
+@media screen and (min-width: 426px) and (max-width: 768px) {
+    .contenedor{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(6, 1fr);
+        grid-template-rows: repeat(2, 50%);
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+    .contenedor{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(5, 25%);
         grid-template-rows: repeat(3, 33%);
     }
 }
@@ -79,7 +96,7 @@
     height: 19vh;
 }
 
-@media screen and (max-width: 830px) {
+@media screen and (max-width: 1024px) {
     .imagen-productos{
         width: 90%;
     }
@@ -88,16 +105,45 @@
         height: max-content;
     }
 }
-
+@media screen and (min-width:1024px) and (max-width: 1440px) {
+    .contenedor{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(8, 1fr);
+        grid-template-rows: repeat(2, 1fr)
+    }
+    .imagen-productos{
+        width: 90%;
+        height: 15vmin
+    }
+    .card{
+        width: 100%
+    }
+}
+@media screen and (min-width:1440px) and (max-width: 2560px) {
+    .contenedor{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: repeat(2, 1fr)
+    }
+    .imagen-productos{
+        width: 90%;
+        height: 15vmin
+    }
+    .card{
+        width: 100%
+    }
+}
 
 /* CARRITO */
 .carrito{
-    width: 80vw;
+    width: 100%;
     background-color: white;
     border-radius: 10px;
-    padding: 10px;
-    margin-bottom: 10px;
     border: 5px solid rgba(39, 180, 10, 0.411);
+    margin-bottom: 10px;
+    padding: 20px;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
@@ -105,11 +151,6 @@
 .lista{
     margin: 20px;
     width: 100%;
-}
-@media screen and (min-width: 415px) and (max-width: 700px) {
-    .carrito{
-        width: 90%;
-    }
 }
 .div-vacio{
     height: 25px
