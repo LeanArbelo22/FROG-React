@@ -8,8 +8,7 @@
 public/JSON/fakeAPI.json
 src/components/Trabajo
 src/components/Formularios/Contacto.jsx
-/backend
-.env
+
 # testing
 /coverage
 
