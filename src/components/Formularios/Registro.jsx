@@ -39,9 +39,9 @@ const Registro = ({ handleSubmit }) => {
             className="formregistro"
             onSubmit={_handleSubmit}
             >
-                <h4 className="froglogo">
-                <img src={logo} alt="logo" />
-                </h4>
+                <div className="logouser2">
+                <img src={logo} alt="logo" className="froglog" />
+                </div>
                 <h3>Registrate!</h3>
                 <p className="completa">Completa los siguentes campos para crear tu cuenta</p>
                 <hr />
@@ -103,9 +103,9 @@ const Registro = ({ handleSubmit }) => {
 
                 <div className="frogterm">
                     <p className="terminos">No tienes tu FrogCard? <Link to="/frogcard">Solicitala aquí!</Link> </p>
-                    <p className="terminos">Al crear tu cuenta estas aceptando nuestros Términos y
+                    <p className="terminos2">Al crear tu cuenta estas aceptando nuestros Términos y
                             Condiciones.</p>
-                    <div className="finalizado">
+                    <div className="submit">
                         <button 
                             className="registerbtn"
                             type="submit">
