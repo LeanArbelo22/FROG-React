@@ -35,22 +35,29 @@ const Tiendas = ({ users }) => {
 
 
     return(
-        <div className="cuerpo">
+        <div>
+
         <Navbar users={users}/>
+
         <div className="fondo">
             <img src={puntos} alt="puntos frog" className="frogcard-span" />
-            <p className="parrafo-notenes">Todavia no la tenes?</p>
-            <button className="boton-solicitar"><Link className="link2" to="/frogcard">Solicitala aqui</Link></button>
+            <button className="boton-solicitar">
+                <Link className="link2" to="/frogcard"> Solicitalá aqui </Link>
+            </button>
         </div>
         
+            <h1 className="titulo-sucursal">Nuestras sucursales</h1>
+
         <div className="contenido">
         {
             locales.map(({id, name, address, schedule, img}) => {
                 return <div className="sucursal" key={id}>
                     <img className="imagen-locales" src={img} alt={name} id="imgLocal" />
-                    <h3>{name}</h3>
-                    <button className="btn verMapa" onClick={() => mostrarMapa(id)}><a href="#maps" className="address">{address}</a></button>
-                    <p>{schedule}</p>
+                    <h3 className="num-sucursal">{name}</h3>
+                    <button className="btn verMapa" onClick={() => mostrarMapa(id)}>
+                        <a href="#maps" className="address">{address}</a>
+                    </button>
+                    <p className="horario">{schedule}</p>
                 </div>
             })
         }
