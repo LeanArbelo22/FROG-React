@@ -1,12 +1,44 @@
 import React from 'react';
+import {useState} from 'react';
 import logo from '../../img/frog-logo.png';
 import { Link } from 'react-router-dom';
 import './formularios.css';
 
-const Registro = () => {
+const Registro = ({ handleSubmit }) => {
+
+    const [formValues, setFormValues] = useState({
+        name: '',
+        email: '',
+        password: '',
+        frogcard: 6376930000
+    })
+    
+        //const response = await fetch('https://frog-react-pwa.herokuapp.com/api/auth/new-user');
+    
+    const handleChange = (event) => {
+        event.preventDefault();
+        const { name, value } = event.target;
+        console.log(name, value);
+
+        setFormValues({...formValues, [name] : value})
+    }
+
+    const _handleSubmit = (e) => {
+
+        e.preventDefault();
+        handleSubmit({...formValues})
+        console.log(formValues)
+        
+    }
+
+
+
     return(
         <div className="form-container form-regis">
-            <form className="formregistro">
+            <form 
+            className="formregistro"
+            onSubmit={_handleSubmit}
+            >
                 <h4 className="froglogo">
                 <img src={logo} alt="logo" />
                 </h4>
@@ -17,9 +49,11 @@ const Registro = () => {
                 <div className="datos">
                 <label htmlFor="nombre"><b>Nombre y Apellido</b></label>
                    <input className="form-control REG" 
-                   type="text" placeholder=""
-                   name="cedula" 
+                   type="text" placeholder="Ej: Juan Perez"
+                   name="name" 
                    id="cedula" 
+                   value={formValues.name}
+                   onChange={handleChange}
                    required />
 
                 <label htmlFor="email"><b>Email</b></label>
@@ -28,22 +62,29 @@ const Registro = () => {
                     placeholder="Ingresa tu correo electronico"
                     name="email"
                     id="email"
+                    value={formValues.email}
+                    onChange={handleChange}
                     required />
 
                     <label htmlFor="psw"><b>Contraseña</b></label>
                     <input className="form-control REG" 
                     type="password" 
                     placeholder="Ingresa tu contraseña" 
-                    name="psw"
+                    name="password"
                     id="psw" 
+                    value={formValues.password}
+                    onChange={handleChange}
                     required />
 
                     <label htmlFor="frogcard"><b>FrogCard</b></label>
                     <input className="form-control REG" 
                     type="text" 
                     placeholder="Ej: 637693000011111 (Opcional)"
-                    name="FrogCard" 
-                    id="frogCard" />
+                    name="frogcard" 
+                    id="frogCard"
+                    value={formValues.frogcard}
+                    onChange={handleChange}
+                    />
 
 
                     <div className="localidad">
@@ -65,7 +106,11 @@ const Registro = () => {
                     <p className="terminos">Al crear tu cuenta estas aceptando nuestros Términos y
                             Condiciones.</p>
                     <div className="finalizado">
-                        <button className="registerbtn"><Link to="/" className="linkhome">Crear Cuenta</Link></button>
+                        <button 
+                            className="registerbtn"
+                            type="submit">
+                                Crear Cuenta
+                                </button>
                     </div>
                 </div>
                 </div>

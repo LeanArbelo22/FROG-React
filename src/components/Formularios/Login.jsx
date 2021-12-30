@@ -1,16 +1,38 @@
-import React from 'react';
+import React, {useState} from 'react';
 import logo from '../../img/frog-logo.png';
 import { Link } from 'react-router-dom';
 import './formularios.css'
 
-const Login = () => {
+const Login = ({handleLogin}) => {
+
+    const [loginValues, setLoginValues] = useState({
+        email: '',
+        password: ''
+    }) 
+
+    const handleChange = (event) => {
+        event.preventDefault();
+        const { name, value } = event.target;
+        console.log(name, value);
+
+        setLoginValues({...loginValues, [name] : value})
+    }
+
+    const _handleLogin = (e) => {
+
+        e.preventDefault();
+        handleLogin({...loginValues})
+        console.log(loginValues)
+        
+    }
+
     return (
         <>
         <div className="backg">
             <div className="form-container">
                 <form className="container-fluid form"
                     id="iniciar"
-                    action="">
+                    onSubmit={_handleLogin}>
 
                     <div className="logouser">
                         <img src={logo} alt="froglogo" className="froglog" />
@@ -22,6 +44,8 @@ const Login = () => {
                         <input type="email"
                             className="form-control"
                             name="email"
+                            value={loginValues.email}
+                            onChange={handleChange}
                             id="email"
                             placeholder="frog@user.com"
                             required />
@@ -31,10 +55,12 @@ const Login = () => {
                         <label htmlFor="contraseña">Contraseña</label>
                         <input type="password"
                             className="form-control"
-                            name="contraseña"
+                            name="password"
+                            value={loginValues.password}
+                            onChange={handleChange}
                             id="contraseña"
                             placeholder="******"
-                            minlength="6"
+                            minLength="6"
                             required />
                     </div>
                     <div className="row">
@@ -57,8 +83,8 @@ const Login = () => {
 
                             <button
                                 type="submit"
-                                className="login">
-                                <Link to="/">Iniciar sesión</Link>
+                                className="login">Iniciar sesión
+                                {/* <Link to="/"></Link> */}
                             </button>
 
                         </div>

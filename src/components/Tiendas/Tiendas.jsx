@@ -7,7 +7,7 @@ import { Link } from 'react-router-dom'
 import Mapas from './Mapas';
 import mostrarMapa from './Mapas';
 
-const Tiendas = () => {
+const Tiendas = ({ users }) => {
 
     const [locales, setLocales] = useState([]);
     useEffect(() => {
@@ -27,6 +27,7 @@ const Tiendas = () => {
                 img: tienda.img,
             }
         });
+        console.log("Array de sucursales extraido de API local (archivo tiendas.JSON)")
         console.log(card);
         setLocales(card)
     };
@@ -35,7 +36,7 @@ const Tiendas = () => {
 
     return(
         <div className="cuerpo">
-        <Navbar />
+        <Navbar users={users}/>
         <div className="fondo">
             <img src={puntos} alt="puntos frog" className="frogcard-span" />
             <p className="parrafo-notenes">Todavia no la tenes?</p>

@@ -11,8 +11,13 @@ function ShoppingCart() {
     
     const [productos, setProductos] = useState([]);
     useEffect(() => {
-        peticion()
-    });
+        async function _fetch () {
+       await peticion();
+            
+    //solucionar problema de este useEffect con cleanup function
+    }
+    _fetch()}, []
+    );
     const peticion = async () => {
         const localJson = './JSON/productos.json'
         const respuesta = await fetch(localJson);
