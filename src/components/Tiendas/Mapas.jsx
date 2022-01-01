@@ -27,9 +27,9 @@ function Mapas(id){
     
     
     return (
-    <div>
+    <>
         <span id="maps"></span>
-    </div>
+    </>
     )
 }
 

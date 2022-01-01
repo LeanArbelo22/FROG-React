@@ -1,45 +1,87 @@
 .foot{
     position: static; 
     bottom: 0;
+    margin-top: 1px;
     background-color: rgba(34, 34, 34, 0.897);
     text-shadow: 1px 1px 2px black;
     color: #45BB3A;
-    padding: 20px
+    padding: 10px;
+} 
+.icono{
+    font-size: 1.3em;
+} 
+@media screen and (max-width: 768px){
+    .grid-display{
+        display: grid;
+        grid-template-columns: repeat (3, 1fr);
+        grid-template-rows: repeat(3, 1fr);
+    }
+    .grid-display .subscribe{
+        height: 45px;
+        font-size: 0.8em
+    }
+    .grid-display .redes{
+        text-align: center;
+    }
+    .icono{
+        margin: 2px
+    }
+}
+@media screen and (min-width: 769px) and (max-width: 1440px){
+    .grid-display{
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+    }
+    .grid-display .subscribe{
+        height: 39px;
+        font-size: 0.8em;
+        grid-column-start: 2;
+        margin-left: 10px;
+        width: 250px;
+    }
+    .grid-display .redes{
+        grid-column-start: 6;
+        text-align: center
+    }
+    .icono{
+        margin: 2px;
+        height: 42px;
+    }
+  }
+  @media screen and (min-width: 1441px) {
+    .grid-display{
+        display: grid;
+        grid-template-columns: repeat (4, 1fr);
+    }
+    .grid-display .label{
+        font-size: 1em
+    }
+    .grid-display .subscribe{
+        height: 3em;
+        grid-column-start: 2;
+        margin-left: 10px;
+        width: 350px;
+        font-size: 1.3em;
+    }
+    .grid-display .redes{
+        grid-column-start: 6;
+        text-align: center;
+        font-size: 1.3em
+    }
+    .icono{
+        margin: 2px;        
+    } 
 }
 footer a{
-    text-decoration: none;
-    font-size: 15px;
-    font-weight: 650;
-    color: gray;
-    } 
-      footer a:hover{
-      color: #45BB3A;}
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 650;
+      color: gray;
+        } 
+        footer a:hover{
+        color: #45BB3A;}
 
-.grid-display{
-    display: grid;
-    grid-template-columns: repeat(2, 1fr);
-} .grid-display .redes{
-    grid-column-start: 3;
-}
-
-.icono{
-    font-size: 1.5em
-}
-
-.lab{
+.label{
     margin-top: 5px;
     font-size: 10px;
-    font-weight: 400;
-}
-.leandro{
-    padding-bottom: 5px;
-}
-
-@media screen and (min-width: 300px) and (max-width: 830px) {
-    .subscribe{
-        font-size: 10px;
     }
-    .redes{
-        height: fit-content;
-    }
-}

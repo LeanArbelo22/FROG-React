@@ -1,8 +1,7 @@
 .navbar{
     width: 100%;
-    height: 15vh;
+    height: 100px;
     margin: 0;
-    padding: 0 3vw;
   
     background-color: rgba(34, 34, 34, 0.897);
     color: rgb(255, 255, 255);
@@ -14,21 +13,65 @@
     justify-content: space-between;
     align-items: center;
     
-    font-size: 1.4vmax;
     font-weight: 600;
-  
   }
-  
+.logos{
+max-height: 110%;
+position: static;
+left: 20px;
+}
+@media screen and (max-width: 425px){
+  .navbar{
+    height: 45px;
+    font-size: 0.6em;
+    display: flex;
+    justify-content: space-around
+  }
+}
+@media screen and (min-width: 426px) and (max-width: 768px){
+  .navbar{
+    height: 50px;
+    font-size: 0.8em;
+    display: flex;
+    justify-content: space-around
+  } 
+}
+@media screen and (min-width: 769px) and (max-width: 1024px){
+  .navbar{
+    height: 60px;
+    font-size: 0.9em;
+  }
+  .logos{
+    padding: 3px
+  }
+}
+@media screen and (min-width: 1025px) and (max-width: 1440px){
+  .navbar{
+    height: 75px;
+    font-size: 1.1em;
+  }
+  .logos{
+    padding: 3px;
+    margin-left: 15px;
+  }
+}
+@media screen and (min-width: 1441px){
+  .navbar{
+    height: 110px;
+    font-size: 1.3em;
+  }
+  .logos{
+    padding: 5px;
+    margin-left: 15px;
+  }
+}
   ul{
     margin: 0;
     padding: 0;
-    
     list-style: none;
-    text-transform: uppercase;
-  
+    text-transform: uppercase;  
     display: flex;
   }
-  
   li {
     margin-right: 1vmax;
   }
@@ -38,8 +81,4 @@
   }
   .link:hover{
     color: rgb(255, 255, 255);
-  }
-
-  .logo{
-      width: 10%;
   }

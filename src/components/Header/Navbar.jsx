@@ -9,7 +9,7 @@ const Navbar = () => {
     return (
         <Fragment>
             <nav className="navbar">
-                <img src={logo} alt="frog logo" className="logo" />
+                <img src={logo} alt="frog logo" className="logos" />
                 <ul>
                     <li><Link className="link" to="/">Locales</Link></li>
                     <li><Link className="link" to="/envios">Envios</Link></li>

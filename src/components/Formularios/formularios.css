@@ -1,6 +1,5 @@
 .backg{
     width: 100vw;
-    height: 100vh;
     margin: auto;
     display: flex;
     align-items: center;
@@ -22,9 +21,9 @@
 .form-container{ /* bloque formulario completo */
     margin: auto;
     width: 70vw;
+    max-width: 470px;
     text-align: center;
     padding: 20px;
-    max-width: 470px;
     background-color: rgba(34, 34, 34, 0.877);
     border: 1px solid;
     border-radius: 12px;

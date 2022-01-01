@@ -2,8 +2,6 @@ import React, {useEffect, useState} from 'react';
 import Navbar from '../Header/Navbar';
 import Footer from '../Footer/Footer';
 import './tiendas.css';
-import puntos from '../../img/tarjetaPuntos.jpg';
-import { Link } from 'react-router-dom'
 import Mapas from './Mapas';
 import mostrarMapa from './Mapas';
 
@@ -39,12 +37,7 @@ const Tiendas = ({ users }) => {
 
         <Navbar users={users}/>
 
-        <div className="fondo">
-            <img src={puntos} alt="puntos frog" className="frogcard-span" />
-            <button className="boton-solicitar">
-                <Link className="link2" to="/frogcard"> Solicitalá aqui </Link>
-            </button>
-        </div>
+        
         
             <h1 className="titulo-sucursal">Nuestras sucursales</h1>
 
