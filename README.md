@@ -32,6 +32,6 @@ Tambien queria aclarar que utilice Bootstrap lo menos posible porque me desafie 
 incluyendo todas las media queries para hacerlo completamente responsive.
 
 Por ultimo, intente hacer el deploy en github siguiendo las indicaciones vistas en clases, cambiando build por docs\
-y corrigiendo los paths en index.html pero no fue posible. Por eso el deploy esta en Heroku, junto con el backend que tambien se encuentra en heroku. Y en github al backend lo pueden encontrar [https://github.com/LeanArbelo22/FROG-Backend](aqui).
+y corrigiendo los paths en index.html pero no fue posible. Por eso el deploy esta en Heroku, junto con el backend que tambien se encuentra en heroku. Y en github al backend lo pueden encontrar en [https://github.com/LeanArbelo22/FROG-Backend](aqui).
 
 Mientras siga aprendiendo ire mejorandolo, pero de momento, este es mi proyecto final.
