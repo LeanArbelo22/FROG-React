@@ -13,7 +13,7 @@ const Login = ({handleLogin}) => {
     const handleChange = (event) => {
         event.preventDefault();
         const { name, value } = event.target;
-        console.log(name, value);
+        //console.log(name, value);
 
         setLoginValues({...loginValues, [name] : value})
     }
@@ -22,7 +22,7 @@ const Login = ({handleLogin}) => {
 
         e.preventDefault();
         handleLogin({...loginValues})
-        console.log(loginValues)
+        //console.log(loginValues)
         
     }
 

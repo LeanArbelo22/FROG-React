@@ -18,7 +18,7 @@ const Registro = ({ handleSubmit }) => {
     const handleChange = (event) => {
         event.preventDefault();
         const { name, value } = event.target;
-        console.log(name, value);
+        //console.log(name, value);
 
         setFormValues({...formValues, [name] : value})
     }
@@ -26,8 +26,8 @@ const Registro = ({ handleSubmit }) => {
     const _handleSubmit = (e) => {
 
         e.preventDefault();
-        handleSubmit({...formValues})
-        console.log(formValues)
+        handleSubmit({...formValues});
+        //console.log(formValues)
         
     }
 
