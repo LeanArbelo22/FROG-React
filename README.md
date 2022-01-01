@@ -19,16 +19,19 @@ correcto funcionamiento de la misma.
 
 Para la ruta '/envios' hice lo mismo que con los locales, traje los productos desde un archivo local JSON\
 y un map para mostrarlos.
-Cabe aclarar que se me presentaron ciertas dificultades para poder darle algunas funcionalidades secundarias\
-a esta parte, como por ejemplo hacer un subtotal de la compra.
+Cabe aclarar que se me presentaron ciertas dificultades para poder darle algunas funcionalidades secundarias
+a esta parte,\
+como por ejemplo hacer un subtotal de la compra.
 
 Para la ruta '/login' y '/registro' use un metodo POST en ambas, utilizando la BD Frog/users.\
 Ambas funcionan correctamente, pero debido a la falta de informacion, no logre que luego del registro o login pase\
-algo mas que mostrar un alert (e informacion en la consola) para validar si funciono o no el registro en la bd o el\ logueo en la app. Pero en consola se puede corroborar.
+algo mas que mostrar un alert (e informacion en la consola) para validar si funciono o no el registro en la bd o el
+logueo en la app. Pero en consola se puede corroborar.
 
-Tambien queria aclarar que utilice Bootstrap lo menos posible porque me desafie a escribir todos los estilos por mi\ mismo, incluyendo todas las media queries para hacerlo completamente responsive.
+Tambien queria aclarar que utilice Bootstrap lo menos posible porque me desafie a escribir todos los estilos por mi mismo,\
+incluyendo todas las media queries para hacerlo completamente responsive.
 
 Por ultimo, intente hacer el deploy en github siguiendo las indicaciones vistas en clases, cambiando build por docs\
-y corrigiendo los paths en index.html pero no fue posible. Por eso el deploy esta en Heroku, junto con el backend que\ tambien se encuentra en heroku. Y en github al backend lo pueden encontrar [https://github.com/LeanArbelo22/FROG-Backend](aqui).
+y corrigiendo los paths en index.html pero no fue posible. Por eso el deploy esta en Heroku, junto con el backend que tambien se encuentra en heroku. Y en github al backend lo pueden encontrar [https://github.com/LeanArbelo22/FROG-Backend](aqui).
 
 Mientras siga aprendiendo ire mejorandolo, pero de momento, este es mi proyecto final.
